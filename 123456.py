@@ -24,8 +24,8 @@ def generate_key(password: str, salt: bytes):
 
 # --- STREAMLIT UI ---
 
-st.set_page_config(page_title="Secure QR Vault", page_icon="🔐")
-st.title("🔐 Secure QR genrator with encryption")
+st.set_page_config(page_title="Secure QR code", page_icon="🔐")
+st.title("🔐 Secure QR code genrator with encryption")
 
 tab1, tab2 = st.tabs(["🔐Create QR", "Read/Decrypt QR"])
 
@@ -91,3 +91,4 @@ with tab2:
                 st.error("Incorrect password or corrupted QR code.")
         else:
             st.error("No QR Code detected in the image.")
+
